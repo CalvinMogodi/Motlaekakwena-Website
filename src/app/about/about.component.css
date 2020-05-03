@@ -1,0 +1,21 @@
+.subtitle {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #343434;
+    letter-spacing: normal;
+    padding-top: 30px;
+}
+
+.my-icon{
+    font-size: xx-large;
+    padding-right: 5px;
+    height: 15px;
+    color: #0088CC;
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 3s ease;
+    transition: transform 3s ease;
+    transition: transform 3s ease, -webkit-transform 3s ease;
+  }
