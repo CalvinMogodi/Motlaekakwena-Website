@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestOptions, URLSearchParams, Headers, Http, } from '@angular/http';
+import { HttpParams } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 
 @Component({
   selector: 'app-contact',
@@ -16,7 +19,7 @@ export class ContactComponent implements OnInit {
     subject: undefined,
     msg: undefined,
   };
-  constructor() { }
+  constructor(private http : Http, public httpClient : HttpClient) { }
 
   ngOnInit() { 
   }
@@ -50,8 +53,24 @@ export class ContactComponent implements OnInit {
       return;
     }
     
-    this.isSent = true;
+    let body = new URLSearchParams();
+  body.set('email', this.msg.email);
+  body.set('name', this.msg.name );
+  body.set('message', this.msg.msg);
+  body.set('subject', this.msg.subject);
 
+  let headers = new Headers();
+  headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+  let options = new RequestOptions({ headers: headers, params: this.msg });
+  let params = new HttpParams();
+    params = params.append('email', this.msg.email);
+    params = params.append('message', this.msg.msg);
+
+  let endpoint = "../assets/php/mail.php";
+
+    this.http.post(endpoint, this.msg, options).subscribe(response => {
+      this.isSent = true;
+    });
   }
-
 }
