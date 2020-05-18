@@ -1,0 +1,118 @@
+.team-caption {
+    color: #ff5f13;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Teko",sans-serif;
+    display: block;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.team-caption :before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff5f13;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-image{
+    background-image: url(../../assets/img/team/overlay-bg.jpg);
+}
+
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0;
+}
+
+.overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+}
+.overlay-mf {
+    background-color: #6F7584;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.testimonial-box .author {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.comit {
+    font-size: 2rem;
+    color: #0078ff;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.btn-span{
+    width: 18px;
+    height: 7px;
+    margin: 5px 5px;
+    background: #cde1f8;
+    border: 0px solid #cde1f8;
+    display: block;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.my-btn{
+    background: 0 0;
+    color: inherit;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0!important;
+    font: inherit; 
+}
+
+

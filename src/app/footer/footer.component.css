@@ -1,6 +1,6 @@
 #footer {
-    background: #264E66;
-    border-top: 4px solid #264E66;
+    background: #0E162B;
+    border-top: 4px solid #0E162B;
     font-size: 0.9em;
     padding: 10px 0px 0px 0px;
     position: relative;
@@ -79,7 +79,7 @@ p {
 }
 
 #footer .footer-copyright.footer-copyright-style-2 {
-    background: #264E66;
+    background: #0E162B;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 #footer .footer-copyright {

@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     AboutComponent,
     ContactComponent,
     IndustryComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
